@@ -1,37 +1,73 @@
-## Welcome to GitHub Pages
+<!!DOCTYPE html>
 
-You can use the [editor on GitHub](https://github.com/Black-Chocolate/eluosi/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+<html lang="en">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+	<head>
 
-### Markdown
+		<meta charset="utf-8">
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+		<title>俄罗斯方块</title>
 
-```markdown
-Syntax highlighted code block
+		<link rel="stylesheet" href="css/style.css" />
 
-# Header 1
-## Header 2
-### Header 3
+	</head>
 
-- Bulleted
-- List
+	<body>
 
-1. Numbered
-2. List
+		<div>请用方向键和空格键进行操作</div>
 
-**Bold** and _Italic_ and `Code` text
+		<div class="square" id="local">
 
-[Link](url) and ![Image](src)
-```
+			<div class="title">我的游戏区域</div>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+			<div class="game" id = "local_game"></div>
 
-### Jekyll Themes
+			<div class="next" id = "local_next"></div>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Black-Chocolate/eluosi/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+			<div class="info">
 
-### Support or Contact
+				<div>已用时:<span id="local_time">0</span>s</div>
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+				<div>已得分:<span id="local_score">0</span>分</div>
+
+				<div id="local_gameover"></div>
+
+			</div>
+
+		</div>
+
+		<div class="square" id="local">
+
+			<div class="title">对方游戏区域</div>
+
+			<div class="remoto_game" id = "game"></div>
+
+			<div class="remoto_next" id = "next"></div>
+
+			<div class="info">
+
+				<div>已用时:<span id="remoto_time">0</span>s</div>
+
+				<div>已得分:<span id="remoto_score">0</span>分</div>
+
+				<div id="remoto_gameover"></div>
+
+			</div>
+
+		</div>
+
+		<script src="js/square.js"></script>
+
+		<script src="js/squareFactory.js"></script>
+
+		<script src="js/game.js"></script>
+
+		<script src="js/local.js"></script>
+
+		<script src="js/remote.js"></script>
+
+		<script src="js/script.js"></script>
+
+	</body>
+
+</html>>
